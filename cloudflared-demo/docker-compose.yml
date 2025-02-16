@@ -1,0 +1,12 @@
+services:
+  adminer:
+   image: adminer
+   restart: always
+   
+  tunnel:
+    container_name: cloudflared-tunnel
+    image: cloudflare/cloudflared
+    restart: unless-stopped
+    command: tunnel run
+    environment:
+      - TUNNEL_TOKEN=${CF_TOKEN}
