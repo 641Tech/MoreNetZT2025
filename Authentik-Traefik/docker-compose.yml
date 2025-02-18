@@ -1,6 +1,7 @@
 ---
 
 #For information about how to make this work goto https://docs.goauthentik.io/docs/install-config/install/docker-compose
+#First time login for authentik at https://auth.localhost/if/flow/initial-setup/
 
 services:
 
